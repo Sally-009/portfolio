@@ -111,6 +111,8 @@ h3 {
 p {
     font-family: 'Kiwi Maru', serif;
     font-size: 1em;
+
+    text-align: left;
 }
 
 /* Style rules for form */
