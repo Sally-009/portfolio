@@ -1,0 +1,352 @@
+/*
+Name: Sally K.
+Date: 11/18/2022 -  
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+div,
+ul,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Make Scroll Smoothly */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Style rules for body and images */
+body {
+    background-image: url("/images/background.png");
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: #51504F;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Show Mobile View and Hide Tablet-Desktop View */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+#menu-links {
+    display: none;
+}
+
+/* Style rules for navigation/header area */
+header a {
+    width: 100%;
+    background-color: #fff;
+}
+
+nav {
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 1.3em;
+
+    background-color: #fff;
+}
+
+nav li {
+    list-style: none;
+    text-align: right;
+
+    padding: 15px 25px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #51504F;
+}
+
+
+/* Style rules for main content */
+h1, h2, h3, p{
+    padding: 3% 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 1.3em;
+}
+
+p {
+    font-family: 'Kiwi Maru', serif;
+    font-size: 1em;
+}
+
+/* Style rules for form */
+fieldset{
+    border: none;
+
+    font-family: 'Kiwi Maru', serif;
+}
+
+input, textarea{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+
+    border: none;
+
+    margin: 1em;
+    padding: 3%;
+
+    
+    font-family: sans-serif;
+    font-size : 100%;
+}
+
+input{
+    width: 60%;
+}
+
+textarea{
+    width: 90%;
+    resize:none;
+}
+
+/* Style rules for class and id selectors */
+.nav-box {
+    position: relative;
+    z-index: 100;
+
+    background-color: #fff;
+    width: 100%;
+}
+
+.logo-img {
+    margin: auto;
+    height: 75px;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.center {
+    text-align: center;
+}
+
+.link, .link:visited{
+    color: #0071d1;
+}
+
+.content-box{
+    min-height: calc(100vh - 75px);
+
+    background-color: rgba(255, 255, 255, .5);
+    padding: 20px;
+    margin: 0;
+}
+
+.top-msg{
+    position: relative;
+    top: 25%;
+}
+
+.about-img{
+    margin: 10% 0;
+}
+
+.h-center{
+    position: relative;
+    top: 50px;
+}
+
+.arrow-top{
+    position: relative;
+    top: 15%;
+
+    font-size: 50px;
+    color: #51504F;
+
+    padding: 5%;
+
+    animation: move-down 1s infinite alternate ease-in-out;
+}
+
+.arrow-bottom{
+    font-size: 50px;
+    color: #fff;
+
+    padding: 5%;
+
+    animation: move-up 1s infinite alternate ease-in-out;
+}
+
+.button{
+    width: auto;
+    padding: 10px 20px;
+
+    background-color: #82AECB;
+    color: #fff;
+
+    border-bottom: 4px solid #445A69;
+}
+
+#menu-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    padding: 20px;
+
+    line-height: 75px;
+}
+
+#mobile-nav {
+    position: absolute;
+    right: 0;
+    top: 75px;
+
+    float: right;
+    width: 170px;
+
+    box-shadow: -10px 10px 2px rgba(0, 0, 0, 0.4);
+}
+
+#home{
+    height: 100vh;
+    padding: 75px 20px 0 20px;
+    text-align: center;
+}
+
+#about img{
+    width: 60%;
+    margin: 10px auto;
+
+    border-radius: 10px;
+    box-shadow: -7px 7px 2px rgba(0, 0, 0, 0.4);
+}
+
+#work{
+    padding: 20px;
+    background-color: #FFE1E1;
+}
+
+/* Style rules for footer content */
+footer{
+    height: fit-content;
+    text-align: center;
+
+    padding-bottom: 20px;
+
+    color: #fff;
+}
+
+footer img{
+    margin: auto;
+
+    width: 20%;
+    max-width: 100px;
+}
+
+/* Animations */
+@keyframes move-down {
+    from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(10px);
+      }
+}
+
+@keyframes move-up {
+    from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-10px);
+      }
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px),
+print {
+
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rule for header */
+
+    /* Tablet Viewport: Style rules for nav area */
+
+
+    /* Tablet Viewport: Style rules for main content area */
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px),
+print {
+
+    /* Desktop Viewport: Style rule for header */
+
+    /* Desktop Viewport: Style rules for nav area */
+
+    /* Desktop Viewport: Style Rules for main content */
+
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1921px) {
+
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+
+}
+
+/* Media Query for Print */
+@media print {
+
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+}
