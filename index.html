@@ -1,0 +1,191 @@
+<!-- 
+Name: Sally K.
+Date: 11/18/2022 -  
+-->
+
+<!-- 
+    *Progress List*
+
+    11/18
+    mobile nav 完成
+    mobile view コンテンツほぼ完成
+    works 写真
+    スタイル作成次
+
+    11/20
+    mobileスタイル完成
+
+    worksで各作品の説明がしたい
+    →ポップアップウィンドウ？
+
+    次タブレットビュー
+
+-->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sally's Portfolio</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Font Set -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=DotGothic16&family=Fredoka+One&family=Kiwi+Maru&family=Yusei+Magic&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/89f977d684.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<body>
+
+    <!-- Nav for Mobile View -->
+    <div class="mobile fixed nav-box">
+        <header>
+            <a href="#home"><img class="logo-img" src="images/logo.png" alt="Logo"></a>
+        </header>
+        <nav id="mobile-nav">
+            <ul id="menu-links">
+                <li><a href="#about">プロフィール</a></li>
+                <li><a href="#work">製作物</a></li>
+                <li><a href="#contact">連絡先</a></li>
+                <li><a href="english.html">English</a></li>
+            </ul>
+        </nav>
+        <a id="menu-icon" onclick="hamburger()">
+            <img src="images/mobile/menu.png" alt="Hamburger Icon" width="60%"> <!--あとで差し替え-->
+        </a>
+    </div>
+
+    <!-- Nav for Tablet-Desktop View -->
+    <div class="tablet-desktop fixed">
+        <nav>
+            <ul>
+                <li><a href="#about">プロフィール</a></li>
+                <li><a href="#work">製作物</a></li>
+            </ul>
+
+            <header>
+                <a href="#home"><img class="logo-img" src="images/logo.png" alt="Logo"></a>
+            </header>
+
+            <ul>
+                <li><a href="#contact">連絡先</a></li>
+                <li><a href="english.html">English</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main contents start from here -->
+    <main>
+
+        <div id="wrapper" class="center">
+
+            <div id="home">
+                <h1 class="top-msg">Welcome to My Page!</h1>
+                <a href="#about" class="h-center"><i class="fa-solid fa-angles-down arrow-top"></i></a>
+            </div>
+
+            <article>
+                <section id="about" class="content-box">
+                    <h2>About me</h2>
+
+                    <img class="about-img" src="images/sally.png" alt="Sally's Portrait">
+
+                    <p>⾼校卒業後、アメリカの⼤学へ留学。</p>
+                    <p>⼊学時からゲーム業界を志望し、初期はゲームデザインを専攻していたが、中でもプログラマへの関⼼がより強くなり三年⽣始めに情報⼯学専攻に変更。
+                        その影響で卒業が⼀年伸びたものの、⼤好きなプログラミングに集中できる環境で⽇々勉強に励んでいる。</p>
+
+                    <p>- GitHub: <a class="link" href="http://github.com/Sally-009" target="_blank">http://github.com/Sally-009</a>
+                    </p>
+
+                </section>
+
+                <section id="work">
+                    <h2>Works</h2>
+
+                    <h3>RPGツクール作品 (2016-2021)</h3>
+                    <p>全ての作品はこちらから: <a class="link" href="https://www.freem.ne.jp/brand/9378"
+                            target="_blank">https://www.freem.ne.jp/brand/9378</a></p>
+
+                    <div class="img-wrapper">
+                        <figure>
+                            <img src="images/works/watanabe.png" alt="ワタナベと謎だらけの家">
+                            <figcaption>ワタナベと謎だらけの家</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/works/watanabe_2.png" alt="ワタナベとギミックワールド">
+                            <figcaption>ワタナベとギミックワールド</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/works/no_plan_no_life.png" alt="No Plan No Life">
+                            <figcaption>No Plan No Life</figcaption>
+                        </figure>
+                    </div>
+
+                    <h3>C++ 作品 (2022-)</h3>
+                    <p>全ての作品はこちらから: <a class="link" href="http://github.com/Sally-009"
+                            target="_blank">http://github.com/Sally-009</a></p>
+
+                    <div class="img-wrapper">
+                        <figure>
+                            <img src="images/works/anniversary.png" alt="記念日計算機">
+                            <figcaption>記念日計算機</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/works/kiosk.png" alt="キオスクシステム">
+                            <figcaption>キオスクシステム</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section id="contact" class="content-box">
+                    <h2>Contact me</h2>
+                    <p>最後までご覧くださってありがとうございます！なにかコメントや質問がありましたら、こちらのフォームからお申し付けください。</p>
+
+                    <form action="mailto:skojima2025@gmail.com" method="post" enctype="text/plain">
+                        <fieldset>
+                            <input type="text" name="name" id="name" maxlength="30" placeholder="Name" required>
+
+                            <input type="email" name="email" id="email" maxlength="30" placeholder="Email" required>
+
+                            <textarea name="comment" id="comment" rows="4" maxlength="500" placeholder="Comment" required></textarea>
+                        </fieldset>
+
+                        <div class="center">
+                            <input type="reset" value="Reset" class="button">
+                            <input type="submit" value="Submit" class="button">
+                        </div>
+
+                    </form>
+
+                </section>
+            </article>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <a href="#home"><i class="fa-solid fa-angles-up arrow-bottom"></i></a>
+        <p>&copy; 2022 Sally. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
