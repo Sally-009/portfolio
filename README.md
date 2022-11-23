@@ -1,2 +1,6 @@
 # portfolio
 in progress
+  
+ アピールポイント
+ ----------------
+ 
