@@ -33,7 +33,7 @@ html{
 
 /* Style rules for body and images */
 body {
-    background-image: url("./images/background.png");
+    background-image: url("../images/background.png");
     background-color: #EDDAC5;
     background-position: right;
     background-size: cover;
