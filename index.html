@@ -23,6 +23,14 @@ Date: 11/18/2022 -
     11/23
     スタイル修正
 
+    11/26
+    home　修正
+    タブレット/デスクトップ　ナビスタイル
+    タブレットビュー次
+    ページに飛ぶとき行き過ぎ直したい
+    ページ飛んだらナビ消えるのやりたい。あとで
+    サムネサイズ変更したい→容量節約
+
 -->
 
 <!DOCTYPE html>
@@ -68,23 +76,23 @@ Date: 11/18/2022 -
             </ul>
         </nav>
         <a id="menu-icon" onclick="hamburger()">
-            <img src="images/mobile/menu.png" alt="Hamburger Icon" width="60%"> <!--あとで差し替え-->
+            <i class="fa-solid fa-bars"></i>
         </a>
     </div>
 
     <!-- Nav for Tablet-Desktop View -->
     <div class="tablet-desktop fixed">
-        <nav>
-            <ul>
+        <nav class="grid-wrapper">
+            <ul class="grid-item-wrapper1">
                 <li><a href="#about">プロフィール</a></li>
                 <li><a href="#work">製作物</a></li>
             </ul>
 
             <header>
-                <a href="#home"><img class="logo-img" src="images/logo.png" alt="Logo"></a>
+                <a class="grid-item" href="#home"><img class="logo-img" src="images/logo.png" alt="Logo"></a>
             </header>
 
-            <ul>
+            <ul class="grid-item-wrapper2">
                 <li><a href="#contact">連絡先</a></li>
                 <li><a href="english.html">English</a></li>
             </ul>
@@ -97,8 +105,10 @@ Date: 11/18/2022 -
         <div id="wrapper" class="center">
 
             <div id="home">
-                <h1 class="top-msg">Welcome to My Page!</h1>
-                <a href="#about" class="h-center"><i class="fa-solid fa-angles-down arrow-top"></i></a>
+                <div  class="item-center">
+                    <h1 class="top-msg">Welcome to My Page!</h1>
+                    <a href="#about" class="h-center"><i class="fa-solid fa-angles-down arrow-top"></i></a>
+                </div>
             </div>
 
             <article>
