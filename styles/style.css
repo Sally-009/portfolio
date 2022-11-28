@@ -117,6 +117,11 @@ p {
     text-align: left;
 }
 
+figcaption{
+    font-family: 'Kiwi Maru', serif;
+    font-size: 1em;
+}
+
 /* Style rules for form */
 fieldset{
     border: none;
@@ -188,7 +193,11 @@ textarea{
 }
 
 .about-img{
-    margin: 10% 0;
+    width: 60%;
+    margin: 10px auto;
+
+    border-radius: 10px;
+    box-shadow: -7px 7px 2px rgba(0, 0, 0, 0.4);
 }
 
 .arrow-top{
@@ -247,17 +256,9 @@ textarea{
     text-align: center;
 }
 
-#about img{
-    width: 60%;
-    margin: 10px auto;
-
-    border-radius: 10px;
-    box-shadow: -7px 7px 2px rgba(0, 0, 0, 0.4);
-}
-
 #work{
     padding: 20px;
-    background-color: #FFE1E1;
+    background-color: #FEEEED;
 }
 
 /* Style rules for footer content */
@@ -310,6 +311,19 @@ print {
         display: none;
     }
 
+    /* Font sizes */
+    h2 {
+        font-size: 3em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    p, figcaption {
+        font-size: 1.2em;
+    }
+
     /* Tablet Viewport: Style rule for header */
     h1{
         font-size: 50px;
@@ -340,6 +354,30 @@ print {
     }
 
     /* Tablet Viewport: Style rules for main content area */
+    .content-box{
+        min-height: calc(100vh - 100px);
+
+        margin: 5%;
+        border-radius: 50px;
+
+        padding: 5% 10%;
+    }
+
+    /* about */
+
+    .about-text{
+        padding: 5vh 0;
+    }
+
+    .about-img{
+        margin: 5vh auto;
+    }
+
+    /* Works */
+
+    #work{
+        padding: 5% auto;
+    }
 
 }
 
