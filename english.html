@@ -1,0 +1,137 @@
+<!-- 
+Name: Sally K.
+Date: 11/18/2022 -  
+-->
+
+<!-- 
+    *Progress List*
+
+    11/18
+    mobile nav 完成
+    mobile view コンテンツほぼ完成
+    works 写真
+    スタイル作成次
+
+    11/20
+    mobileスタイル完成
+
+    worksで各作品の説明がしたい
+    →ポップアップウィンドウ？
+
+    次タブレットビュー
+
+    11/23
+    スタイル修正
+
+    11/26
+    home　修正
+    タブレット/デスクトップ　ナビスタイル
+    タブレットビュー次
+    ページに飛ぶとき行き過ぎ直したい
+    ページ飛んだらナビ消えるのやりたい。あとで
+    サムネサイズ変更したい→容量節約
+
+    11/27
+    about OK
+    works gridにする
+
+    12/4
+    works OK 説明文まだ
+    とりまレイアウト完了
+    説明次
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sally's Portfolio</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Font Set -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=DotGothic16&family=Fredoka+One&family=Kiwi+Maru&family=Yusei+Magic&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/89f977d684.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<body>
+
+    <!-- Nav for Mobile View -->
+    <div class="mobile fixed nav-box">
+        <header>
+            <a href="#home"><img class="logo-img" src="images/logo.png" alt="Logo"></a>
+        </header>
+        <nav id="mobile-nav">
+            <ul id="menu-links">
+                <li><a href="#about">Profile</a></li>
+                <li><a href="#work">Works</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="english.html">日本語</a></li>
+            </ul>
+        </nav>
+        <a id="menu-icon" onclick="hamburger()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Nav for Tablet-Desktop View -->
+    <div class="tablet-desktop fixed">
+        <nav class="grid-wrapper">
+            <ul class="grid-item-wrapper1">
+                <li><a href="#about">Profile</a></li>
+                <li><a href="#work">Works</a></li>
+            </ul>
+
+            <header>
+                <a class="grid-item" href="#home"><img class="logo-img" src="images/logo.png" alt="Logo"></a>
+            </header>
+
+            <ul class="grid-item-wrapper2">
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="index.html">日本語</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main contents start from here -->
+    <main>
+
+        <div id="wrapper" class="center">
+
+                <div class="content-box">
+                    <p>This page is under construction.</p>
+                    <p>このページは建設中です。</p>
+                    <p>This page is under construction.</p>
+                    <p>このページは建設中です。</p>
+                    <p>This page is under construction.</p>
+                    <p>このページは建設中です。</p>
+                </div>
+
+    </main>
+
+    <footer>
+        <a href="#home"><i class="fa-solid fa-angles-up arrow-bottom"></i></a>
+        <p class="center">Borrowed Illustration (background):canva</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
